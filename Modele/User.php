@@ -74,14 +74,33 @@ class User
     public function editUser($email, $nom, $prenom, $newPassword){
         $pdo = new PDO('mysql:host=localhost;dbname=tpweb', 'root', '');
 
-        $edit = $pdo->prepare('UPDATE User SET email = :email, nom = :nom, prenom = :prenom, password = :password WHERE id = :id');
-        $edit->execute([
-           'id' => $_SESSION['id'],
-           'email' => $email,
-            'nom' => $nom,
-            'prenom' => $prenom,
-            'password' => sha1($newPassword),
+        $checkPassword = $pdo->prepare('SELECT password FROM user WHERE id = :id');
+        $checkPassword->execute([
+            'id'=>$_SESSION['id']
         ]);
+        $check = $checkPassword->fetch(PDO::FETCH_ASSOC);
+
+        if($checkPassword != $newPassword){
+            $edit = $pdo->prepare('UPDATE User SET email = :email, nom = :nom, prenom = :prenom, password = :password WHERE id = :id');
+
+            $edit->execute([
+                'id' => $_SESSION['id'],
+                'email' => $email,
+                'nom' => $nom,
+                'prenom' => $prenom,
+                'password' => $check,
+            ]);
+        }else{
+            $edit = $pdo->prepare('UPDATE User SET email = :email, nom = :nom, prenom = :prenom, password = :password WHERE id = :id');
+
+            $edit->execute([
+                'id' => $_SESSION['id'],
+                'email' => $email,
+                'nom' => $nom,
+                'prenom' => $prenom,
+                'password' => sha1($newPassword),
+            ]);
+        }
     }
 
     public function getAll(){

@@ -2,6 +2,7 @@
 
 session_start();
 include '../Vue/base.php';
+include '../Vue/Article/base.php';
 
 if(isset($_SESSION['privilege'])){
     switch ($_SESSION['privilege']){
