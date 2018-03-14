@@ -9,17 +9,8 @@ if($_POST['login']) {
 
     if($userlog){
 
-        switch ($_SESSION['privilege']){
-            case 1:
-                header('Location: ../App/Membre/index.php');
-                break;
-            case 2 :
-                header('Location: ../App/Redacteur/index.php');
-                break;
-            case 3:
-                header('Location: ../App/Admin/index.php');
-                break;
-        }
+        header('Location: ../App/index.php');
+
     }else {
         header('Location: ../App/login.php?erreur=invalide');
     }

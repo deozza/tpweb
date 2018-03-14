@@ -1,2 +1,2 @@
 <?php
-include '../../../Vue/Users/base.php';
+include '../../../Vue/Users/admin.php';

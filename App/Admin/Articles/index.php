@@ -1,5 +1,3 @@
 <?php
 session_start();
-include '../../../Vue/base.php';
-
-echo 'salut admin';
+include '../../../Vue/Article/admin.php';

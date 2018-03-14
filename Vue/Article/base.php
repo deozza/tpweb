@@ -1,28 +1,25 @@
 <?php
-if(isset($_SESSION['id'])){
-    include_once '../../Modele/Publication.php';
 
-}else{
-    include_once '../Modele/Publication.php';
-}
+require '../Modele/Publication.php';
 
 $publications = new Publication();
-$publications->getAll();
+$publications = $publications->getAll();
 
 echo "<h1 class=\"text-center\">Liste des articles</h1>
     <div class=\"section-with-space text-center section-start\" >
-    <div class=\"container\">";
-if(!$publications){
-    echo "<p>Aucune publication</p>";
-}else{
+    <div class=\"container\">
+    <div class=\"row\">";
+
 
     foreach ($publications as $publication){
+        $url = "article?id=".$publication['id'];
+        $image = "../Web/img/".$publication['image'];
         ?>
-        <div class="text-justify">
-            <h1><a href="" ><?php echo $publication['titre'] ?></a></h1>
-        </div>
+            <div class="col col-sm-4">
+                <a href="<?php echo $url ?>"><img class="img-fluid img-thumbnail"  src="<?php echo $image ?>"></a>
+                <h2><?php echo $publication['titre'] ?></h2>
+            </div>
         <?php
     }
-}
-echo "</div></div>"
+echo "</div></div></div>"
 ?>
