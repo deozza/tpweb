@@ -80,19 +80,19 @@ class User
         ]);
         $check = $checkPassword->fetch(PDO::FETCH_ASSOC);
 
-        if($checkPassword != $newPassword){
-            $edit = $pdo->prepare('UPDATE User SET email = :email, nom = :nom, prenom = :prenom, password = :password WHERE id = :id');
+        if($check['password'] == $newPassword){
+
+            $edit = $pdo->prepare('UPDATE User SET email = :email, nom = :nom, prenom = :prenom WHERE id = :id');
 
             $edit->execute([
                 'id' => $_SESSION['id'],
                 'email' => $email,
                 'nom' => $nom,
-                'prenom' => $prenom,
-                'password' => $check,
+                'prenom' => $prenom
             ]);
         }else{
             $edit = $pdo->prepare('UPDATE User SET email = :email, nom = :nom, prenom = :prenom, password = :password WHERE id = :id');
-
+     
             $edit->execute([
                 'id' => $_SESSION['id'],
                 'email' => $email,
@@ -113,6 +113,12 @@ class User
             return $users;
         else
             return false;
+    }
+
+    public function delete($id){
+        $pdo = new PDO('mysql:host=localhost;dbname=tpweb', 'root', '');
+        $statement = $pdo->prepare('DELETE FROM User WHERE id = :id');
+        $statement->execute(array('id' => $id));
     }
 
 }

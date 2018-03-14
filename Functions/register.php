@@ -16,7 +16,7 @@ if($_POST['register']) {
         } else {
             $register = $user->userRegister($email, sha1($password), $nom, $prenom);
             $user = $user->userLogin($email, sha1($password));
-            header('Location: ../App/Membre/index.php');
+            header('Location: ../App/index.php');
         }
 
     } else {

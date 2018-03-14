@@ -10,16 +10,20 @@ echo "<h1 class=\"text-center\">Liste des articles</h1>
     <div class=\"container\">
     <div class=\"row\">";
 
-
+if($publications){
     foreach ($publications as $publication){
         $url = "article?id=".$publication['id'];
         $image = "../Web/img/".$publication['image'];
         ?>
-            <div class="col col-sm-4">
-                <a href="<?php echo $url ?>"><img class="img-fluid img-thumbnail"  src="<?php echo $image ?>"></a>
-                <h2><?php echo $publication['titre'] ?></h2>
-            </div>
+        <div class="col col-sm-4">
+            <a href="<?php echo $url ?>"><img class="img-fluid img-thumbnail"  src="<?php echo $image ?>"></a>
+            <h2><?php echo $publication['titre'] ?></h2>
+        </div>
         <?php
     }
+}else{
+    echo "<h1>Il n'y a pas d'articles</h1>";
+}
+
 echo "</div></div></div>"
 ?>

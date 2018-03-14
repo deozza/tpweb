@@ -35,4 +35,10 @@ class Publication
             return false;
     }
 
+    public function delete($id){
+        $pdo = new PDO('mysql:host=localhost;dbname=tpweb', 'root', '');
+        $statement = $pdo->prepare('DELETE FROM Publication WHERE id = :id');
+        $statement->execute(array('id' => $id));
+    }
+
 }
