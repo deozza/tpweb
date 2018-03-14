@@ -92,7 +92,7 @@ class User
             ]);
         }else{
             $edit = $pdo->prepare('UPDATE User SET email = :email, nom = :nom, prenom = :prenom, password = :password WHERE id = :id');
-     
+
             $edit->execute([
                 'id' => $_SESSION['id'],
                 'email' => $email,

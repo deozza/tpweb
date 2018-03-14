@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1069dbf-e9d7-420d-8b17-0c01859310c0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Functions/deletePublication.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Functions/deleteUser.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Functions/cf0fba095fa948559cac57cf78cce6970f8f3720.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Functions/register.php" afterPath="$PROJECT_DIR$/Functions/register.php" />
-      <change beforePath="$PROJECT_DIR$/Modele/Publication.php" afterPath="$PROJECT_DIR$/Modele/Publication.php" />
       <change beforePath="$PROJECT_DIR$/Modele/User.php" afterPath="$PROJECT_DIR$/Modele/User.php" />
-      <change beforePath="$PROJECT_DIR$/Vue/Article/admin.php" afterPath="$PROJECT_DIR$/Vue/Article/admin.php" />
-      <change beforePath="$PROJECT_DIR$/Vue/Article/base.php" afterPath="$PROJECT_DIR$/Vue/Article/base.php" />
-      <change beforePath="$PROJECT_DIR$/Vue/Users/admin.php" afterPath="$PROJECT_DIR$/Vue/Users/admin.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,22 +13,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modele/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
-              <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
-                <marker date="1521066858753" expanded="true" signature="302:446" ph="INSERT INTO User... " />
-                <marker date="1521066858753" expanded="true" signature="766:830" ph="SELECT * FRO... User" />
-                <marker date="1521066858753" expanded="true" signature="1511:1550" ph="SELECT * FRO... User" />
-                <marker date="1521066858753" expanded="true" signature="1906:1939" ph="SELECT * FRO... User" />
-                <marker date="1521066858753" expanded="true" signature="2332:2372" ph="SELECT passw... user" />
-                <marker date="1521066858753" expanded="true" signature="2599:2674" ph="UPDATE User... " />
-                <marker date="1521066858753" expanded="true" signature="2917:3014" ph="UPDATE User... " />
-                <marker date="1521066858753" expanded="true" signature="3419:3437" ph="SELECT * FRO... User" />
-                <marker date="1521066858753" expanded="true" signature="3764:3795" ph="DELETE FROM User... " />
+                <marker date="1521067097444" expanded="true" signature="302:446" ph="INSERT INTO User... " />
+                <marker date="1521067097444" expanded="true" signature="766:830" ph="SELECT * FRO... User" />
+                <marker date="1521067097444" expanded="true" signature="1511:1550" ph="SELECT * FRO... User" />
+                <marker date="1521067097444" expanded="true" signature="1906:1939" ph="SELECT * FRO... User" />
+                <marker date="1521067097444" expanded="true" signature="2332:2372" ph="SELECT passw... user" />
+                <marker date="1521067097444" expanded="true" signature="2599:2674" ph="UPDATE User... " />
+                <marker date="1521067097444" expanded="true" signature="2917:3014" ph="UPDATE User... " />
+                <marker date="1521067097444" expanded="true" signature="3414:3432" ph="SELECT * FRO... User" />
+                <marker date="1521067097444" expanded="true" signature="3759:3790" ph="DELETE FROM User... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,6 +119,7 @@
         <option value="$PROJECT_DIR$/Functions/register.php" />
         <option value="$PROJECT_DIR$/Functions/editProfile.php" />
         <option value="$PROJECT_DIR$/Modele/User.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
   </component>
@@ -155,33 +157,6 @@
             <path>
               <item name="tpweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="tpweb" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="tpweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpweb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="tpweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpweb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="tpweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpweb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Membre" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="tpweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpweb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Functions" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="tpweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpweb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modele" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -250,7 +225,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44209000" />
+    <option name="totallyTimeSpent" value="44521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -320,7 +295,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Controller/Membre/UserController.php" />
     <entry file="file://$PROJECT_DIR$/Vue/Membre/base.html" />
     <entry file="file://$PROJECT_DIR$/Lib/UserLoad.php" />
     <entry file="file://$PROJECT_DIR$/Vue/Membre/base.html" />
@@ -606,18 +580,26 @@
     <entry file="file://$PROJECT_DIR$/Modele/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
-          <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
-            <marker date="1521066858753" expanded="true" signature="302:446" ph="INSERT INTO User... " />
-            <marker date="1521066858753" expanded="true" signature="766:830" ph="SELECT * FRO... User" />
-            <marker date="1521066858753" expanded="true" signature="1511:1550" ph="SELECT * FRO... User" />
-            <marker date="1521066858753" expanded="true" signature="1906:1939" ph="SELECT * FRO... User" />
-            <marker date="1521066858753" expanded="true" signature="2332:2372" ph="SELECT passw... user" />
-            <marker date="1521066858753" expanded="true" signature="2599:2674" ph="UPDATE User... " />
-            <marker date="1521066858753" expanded="true" signature="2917:3014" ph="UPDATE User... " />
-            <marker date="1521066858753" expanded="true" signature="3419:3437" ph="SELECT * FRO... User" />
-            <marker date="1521066858753" expanded="true" signature="3764:3795" ph="DELETE FROM User... " />
+            <marker date="1521067097444" expanded="true" signature="302:446" ph="INSERT INTO User... " />
+            <marker date="1521067097444" expanded="true" signature="766:830" ph="SELECT * FRO... User" />
+            <marker date="1521067097444" expanded="true" signature="1511:1550" ph="SELECT * FRO... User" />
+            <marker date="1521067097444" expanded="true" signature="1906:1939" ph="SELECT * FRO... User" />
+            <marker date="1521067097444" expanded="true" signature="2332:2372" ph="SELECT passw... user" />
+            <marker date="1521067097444" expanded="true" signature="2599:2674" ph="UPDATE User... " />
+            <marker date="1521067097444" expanded="true" signature="2917:3014" ph="UPDATE User... " />
+            <marker date="1521067097444" expanded="true" signature="3414:3432" ph="SELECT * FRO... User" />
+            <marker date="1521067097444" expanded="true" signature="3759:3790" ph="DELETE FROM User... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
